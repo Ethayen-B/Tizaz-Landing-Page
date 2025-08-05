@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaInstagram, FaWhatsapp, FaYoutube, FaTelegram, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp, FaYoutube, FaTelegram, FaFacebook, FaPhone, FaPhoneAlt, FaMailchimp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { FaEnvelope, FaLocationPin, FaLocationPinLock, FaMapLocation, FaSuitcase } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
                 <div className="space-y-4 max-w-[300px]">
                     <h1 className='text-2xl font-bold'>Tizaz</h1>
                     <p className="text-dark">
-                      All right recived 2025.
+                      © All right recived 2025.
                     </p>
                 </div>
                     <div className="grid grid-cols-2 gap-10">
@@ -31,11 +32,22 @@ const Footer = () => {
 
                     <div className="space-y-4 max-w-[300px]">
                       <h1 className='text-2xl font-bold'>Contact us</h1>
-                      <div className="flex items-center">
-                        <input type="text" placeholder='Enter your email' className='p-3 border-primary border rounded-s-xl w-full py-4 focus:ring-0 focus:outline-none placeholder:text-darker ' />
-                        <button className='bg-primary text-white font-semibold py-4 px-6 rounded-e-xl border-primary border'> Go</button>
+                      <div className="flex items-center space-x-2">
+                        <FaPhoneAlt className='text-4xl bg-primary text-white rounded-full p-2'/>
+                        <p>+251-111-000000</p>
+                      </div>
+                      
+                      <div className="flex items-center space-x-2">
+                        <FaEnvelope className='text-4xl bg-primary text-white rounded-full p-2'/>
+                        <p>tizaz.contact@gmail.com</p>
                       </div>
 
+                      <div className="flex items-center space-x-2">
+                        <FaLocationPin className='text-4xl bg-primary text-white rounded-full p-2'/>
+                        <p>Addis Ababab, Ethiopia</p>
+                      </div>
+
+                      
                       <div className="flex space-x-6 py-3 text-3xl text-darker">
                         <a href="">
                           <FaInstagram className='cursor-pointer hover:scale-105 duration-200  hover:text-orange-800' />

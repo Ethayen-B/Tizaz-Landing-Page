@@ -35,7 +35,7 @@ const Hero = () => {
                     <motion.h1 variants={FadeUp(0.6)} initial="initial" animate="animate" className='text-3xl lg:text-5xl font-bold !leading-snug'>Simplify Your Restaurant Operations With <span className='text-secondary'>Tizaz</span></motion.h1>
                     <div className='flex justify-center md:justify-start'>
                         <motion.button variants={FadeUp(0.8)} initial="initial" animate="animate" className='primary-btn flex items-center gap-2 group'>
-                            Get Started
+                            Get Started free
                             <IoIosArrowRoundForward className='text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300'/>
                         </motion.button>
                     </div>
