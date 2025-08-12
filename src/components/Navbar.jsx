@@ -11,17 +11,17 @@ const NavbarMenu = [
     {
         id: 2,
         title: "Features",
-        path: "#"
+        path: "/features"
     },
     {
         id: 3,
         title: "Testimonial",
-        path: "#"
+        path: "/testimonial"
     },
     {
         id: 3,
         title: "Download",
-        path: "#"
+        path: "/download"
     },
 ];
 

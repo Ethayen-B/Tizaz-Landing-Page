@@ -64,7 +64,7 @@ const Features = () => {
   return (
     <section className='bg-[#f1f1f1] px-30'>
         <div className="container pb-14 pt-16 mx-auto">
-            <h1 className="text-4xl font-bold text-left pb-5 text-primary">Features</h1>
+            <h1 className="text-4xl font-bold pb-5 text-primary text-center">Features</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10 mx-auto">
                 {
                     FeaturesData.map((feature) => (
@@ -72,7 +72,7 @@ const Features = () => {
                         variants= {SlideLeft(feature.delay)}
                         initial= "initial"
                         whileInView={'animate'}
-                        // viewport={{once: true}}
+                        viewport={{once: true}}
                         className='bg-primary text-white hover:text-primary rounded-2xl flex flex-col shadow gap-3 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-300 hover:shadow-xl'>
                             <div className="text-5xl mb-4"> { feature.icon }</div>
                             <h1 className='text-lg font-semibold text-center px-3'>{ feature.title } </h1>

@@ -13,12 +13,12 @@ const Download = () => {
                     <h1 className='text-4xl text-center text-white'>Tizaz is Available for Android and Ios</h1>
                 </div>
                 <div className="justify-center items-center">
-                    <button className='w-100 hover:bg-[#f7f7f7] shadow-blue-100 flex items-center justify-center bg-white my-2 py-2 rounded-full'>
+                    <button className='w-100 hover:bg-white hover:scale-110 duration-300 shadow-blue-100 flex items-center justify-center bg-white my-2 py-2 rounded-full'>
                         <FaAppStoreIos className=' text-primary text-3xl  mx-2'/>
                         <p>Download for Ios</p>
                     </button>
                     
-                    <button className='w-100 hover:bg-[#f7f7f7] shadow-blue-100 flex items-center justify-center bg-white my-2 py-2 rounded-full'>
+                    <button className='w-100 hover:bg-white hover:scale-110 duration-300 shadow-blue-100 flex items-center justify-center bg-white my-2 py-2 rounded-full'>
                         <FaGooglePlay className='text-3xl text-primary md:text-3xl  mx-2'/>
                         <p>Download for Ios</p>
                     </button>                    
