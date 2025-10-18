@@ -73,6 +73,7 @@ const Features = () => {
                         initial= "initial"
                         whileInView={'animate'}
                         viewport={{once: true}}
+                        key={feature.id}
                         className='bg-primary text-white hover:text-primary rounded-2xl flex flex-col shadow gap-3 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-300 hover:shadow-xl'>
                             <div className="text-5xl mb-4"> { feature.icon }</div>
                             <h1 className='text-lg font-semibold text-center px-3'>{ feature.title } </h1>

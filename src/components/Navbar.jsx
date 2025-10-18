@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoMdMenu } from "react-icons/io";
 import { motion } from 'framer-motion';
+import { Link, useNavigate } from 'react-router';
 
 const NavbarMenu = [
     {
@@ -19,13 +20,14 @@ const NavbarMenu = [
         path: "/testimonial"
     },
     {
-        id: 3,
+        id: 4,
         title: "Download",
         path: "/download"
     },
 ];
 
 const Navbar = () => {
+    const navigate = useNavigate();
   return (
     <nav className='bg-white shadow-xl relative z-20'>
         <motion.div 
@@ -46,7 +48,9 @@ const Navbar = () => {
                     </li>
                 ))}
 
-                <button className='primary-btn '>Get Started</button>
+                <button className='primary-btn ' onClick={()=>{
+                   navigate('/login')
+                }}>Get Started</button>
             </ul>
         </div>
         <div className="lg:hidden">

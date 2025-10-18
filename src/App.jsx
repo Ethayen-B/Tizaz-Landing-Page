@@ -1,20 +1,15 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
-import Features from './components/Features'
-import Download from './components/Download'
-import Testimonial from './components/Testimonial'
+import { Route, Routes } from 'react-router'
+import HomePage from './pages/HomePage'
+import Login from './pages/Login'
+
 
 const App = () => {
   return (
-    <main className='overflow-x-hidden bg-white text-dark'>
-      <Hero />
-      <Features />
-      <Testimonial />
-      <Download />
-      <Footer />
-    </main>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path='login' element={<Login />} />
+      </Routes>
   )
 }
 
